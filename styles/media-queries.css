@@ -1,0 +1,22 @@
+@media only screen and (max-width:618px){
+    #task{
+        width: 90%;
+        margin:auto;
+        height: 45px;
+    }
+}
+@media only screen and (max-width:800px){
+    .item{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:390px){
+    .inputitem{
+        width: 80%;
+    }
+
+}
+
+
+
