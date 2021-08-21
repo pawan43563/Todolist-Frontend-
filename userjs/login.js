@@ -1,12 +1,12 @@
 import {apicall} from "../src/apicalls/apirequest.js";
-import {modal} from "../src/components/modal.js"
+
 
 
 export const Login=async (e)=>{
     e.preventDefault();
     const formData = new FormData(e.target);
     const formProps = Object.fromEntries(formData);
-    let url="http://localhost:3000/users/login"
+    let url="https://todolist-backend786.herokuapp.com/users/login"
     let obj={
         method:"POST",
         headers:{
@@ -27,7 +27,7 @@ export const Login=async (e)=>{
     }
     localStorage.setItem("token",response.token)
     if(response.token){
-        window.location.href="http://127.0.0.1:5500/Task.html"
+        window.location.href="https://pawan43563.github.io/Todolist-Frontend-/Task.html"
     }
     
         

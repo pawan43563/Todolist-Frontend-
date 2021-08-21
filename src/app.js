@@ -35,7 +35,7 @@ export const Logout=(event)=>{
   event.preventDefault();
   if(confirm("Are you sure you want to logout?")){
     localStorage.removeItem("token");
-    window.location.href="http://127.0.0.1:5500/login.html"
+    window.location.href="https://pawan43563.github.io/Todolist-Frontend-/"
   }
   return;
   
@@ -44,7 +44,7 @@ export const Logout=(event)=>{
 export const Delete1=async (event)=>{
   event.preventDefault();
   if(confirm("Are you sure you want to Delete?")){
-    let url="http://localhost:3000/users/delete-user"
+    let url="https://todolist-backend786.herokuapp.com/users/delete-user"
     let obj={
         method:"DELETE",
         headers:{
@@ -54,7 +54,7 @@ export const Delete1=async (event)=>{
     }
     const response=await apicall({url:url})
     localStorage.removeItem("token");
-    window.location.href="http://127.0.0.1:5500/register.html"
+    window.location.href="https://pawan43563.github.io/Todolist-Frontend-/register.html"
   }
   return;
   

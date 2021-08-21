@@ -1,7 +1,8 @@
 import { apicall } from "./apirequest.js"
 
 // let url="https://lit-brushlands-91579.herokuapp.com/tasks"
-let url="http://localhost:3000/tasks"
+// let url="http://localhost:3000/tasks"
+let url="https://todolist-backend786.herokuapp.com/tasks"
 
 let token=localStorage.getItem("token")
 export const getAllTasks=()=>{

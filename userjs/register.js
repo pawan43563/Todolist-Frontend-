@@ -5,7 +5,7 @@ export const Register=async (e)=>{
     e.preventDefault()
     const formData = new FormData(e.target);
     const formProps = Object.fromEntries(formData);
-    let url="http://localhost:3000/users/register"
+    let url="https://todolist-backend786.herokuapp.com/users/register"
     let obj={
         method:"POST",
         headers:{
@@ -23,7 +23,7 @@ export const Register=async (e)=>{
         alert("Please Enter the details to register")
         return 
     }
-    window.location.href="http://127.0.0.1:5500/login.html";
+    window.location.href="https://pawan43563.github.io/Todolist-Frontend-/index.html";
 
 }
 
