@@ -10,13 +10,12 @@ export const Login=async (e)=>{
     let obj={
         method:"POST",
         headers:{
-            'Accept':'application/json',
+            'Access-Control-Allow-Origin': '*',
             'Content-Type': 'application/json' 
         },
         body:JSON.stringify(formProps)
     }
     const response=await apicall({url:url,obj:obj})
-    console.log(response);
     if(response==="503"){
         alert("Can't Authenticate User Server is in offline mode")
         return 
