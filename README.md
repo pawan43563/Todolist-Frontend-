@@ -39,8 +39,8 @@
 ------------
 ### Live Demo
 ----
-[Github Live Link](https://pawan43563.github.io/Todolist-frontend/)
-[Netlify Live Link](https://hardcore-williams-7a402a.netlify.app/)
+[Github Live Link](https://pawan43563.github.io/Todolist-Frontend-/)
+[Netlify Live Link](https://naughty-minsky-ced17d.netlify.app/)
 
 -------------
 ### Author
