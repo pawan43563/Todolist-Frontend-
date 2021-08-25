@@ -1,6 +1,5 @@
 import { addTask, DisplayAllTasks } from "./actions/domOperations.js";
 import {Toggle} from "./actions/theme.js"
-import {apicall} from "./apicalls/apirequest.js"
 // import "../styles/styles.css";
 // import "../styles/media-queries.css";
 
