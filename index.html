@@ -3,9 +3,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    
+    
+    <!-- STYLES  -->
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>Login</title>
-    <script src="./userjs/login.js" defer type="module"></script>
+    <link rel="stylesheet" href="./styles/media-queries.css">
+    
     <!-- FONT AWESOME -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,25 +23,34 @@
     <link href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap" rel="stylesheet">
 
     
+    <!-- JS FILE -->
+    <script src="./src/app.js" type="module" defer></script>
+
 
 </head>
-
 <body>
-    
-    <div class="auth-box">
-        <h1 class="auth-heading">Login</h1>
-        <div id="login">
-            <form action="" class="form" id="login-form" method="post">
-                <input class="auth-input" type="text" placeholder="email" name="email" /><br>
-                <input class="auth-input" type="password" placeholder="password" name="password" /><br>
-                <button  id="button">Login</button>
-            </form>
-            <p class="auth-para">Do not have an account?
-                <a class="auth-link" href="./register.html">Sign Up</a>
-            </p>
-        </div>
+    <div id="error"></div>
+    <div class="title">
+        <h1>TodoList <i id="theme" class="fa fa-moon "></i></h1>
+       
     </div>
+
+    <div id="container">
+        <div id="date">
+        </div>
+        <div id="root">
+            <form action="#"  name="taskInput" id="taskform">
+                <input type="text" name="task" id="task" placeholder="Enter New Task"/>
+                <button type="submit">Add Task</button>
+                <button type="reset">Cancel</button>
+            </form>
+        </div>
+        <div id="content">
     
-  
+        </div>
+    <button style="text-align: center;width: 200px;font-size: 25px;" id="reset" >Reset</button>
+     </div>
+    
+ 
 </body>
 </html>

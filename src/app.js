@@ -31,34 +31,7 @@ export const TaskList=(event)=>{
 
 }
 
-export const Logout=(event)=>{
-  event.preventDefault();
-  if(confirm("Are you sure you want to logout?")){
-    localStorage.removeItem("token");
-    window.location.href="https://pawan43563.github.io/Todolist-Frontend-/"
-  }
-  return;
-  
-}
 
-export const Delete1=async (event)=>{
-  event.preventDefault();
-  if(confirm("Are you sure you want to Delete?")){
-    let url="https://todolist-backend786.herokuapp.com/users/delete-user"
-    let obj={
-        method:"DELETE",
-        headers:{
-            'Accept':'application/json',
-            'Content-Type': 'application/json' 
-        },
-    }
-    const response=await apicall({url:url})
-    localStorage.removeItem("token");
-    window.location.href="https://pawan43563.github.io/Todolist-Frontend-/register.html"
-  }
-  return;
-  
-}
 
 const date=document.getElementById("date");
 
@@ -80,9 +53,3 @@ function getday(){
 let taskinput=document.getElementById("taskform")
 taskinput.addEventListener("submit",TaskList)
   
-
-const logout=document.getElementById("logout")
-logout.addEventListener("click",Logout)
-
-const delete1=document.getElementById("delete");
-delete1.addEventListener("click",Delete1)

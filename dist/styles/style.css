@@ -131,58 +131,7 @@ input:focus{
     color:black;
 }
 
-#register-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-}
-
-.auth-input{
-    font-size: 1.2rem;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 25px;
-    padding: 10px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    margin: 10px;
-}
-
-.auth-input:focus{
-    border:2px solid blue;
-}
-
-.auth-heading{
-    color:white;
-    /* text-align: center;
-    margin:10px; */
-}
-
-.auth-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin: 200px auto;
-    border-radius: 25px;
-    border: 2px solid white;
-    width: fit-content;
-}
-
-#login{
-    text-align: center;
-}
-
-.auth-para{
-    color:white;
-}
-
-.auth-link{
-    color:white;
-    font-weight: bolder;
-    text-decoration: none;
-}
 @media only screen and (max-width:618px){
     #task{
         width: 90%;

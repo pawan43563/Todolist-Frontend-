@@ -117,7 +117,8 @@ export const EditTask=async (event)=>{
             FormData={
                 "content":updatedValue.value.trim(),
                 "updatedAt":new Date().toLocaleString(),
-                "createdAt":new Date().toLocaleString()
+                "createdAt":new Date().toLocaleString(),
+                "isComplete":false
             }
             const obj=document.getElementById(id);
 

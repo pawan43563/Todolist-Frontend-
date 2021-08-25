@@ -1,8 +1,6 @@
 import { apicall } from "./apirequest.js"
 
-// let url="https://lit-brushlands-91579.herokuapp.com/tasks"
-// let url="http://localhost:3000/tasks"
-let url="https://todolist-backend786.herokuapp.com/tasks"
+let url="https://polar-woodland-07461.herokuapp.com/tasks"
 
 let token=localStorage.getItem("token")
 export const getAllTasks=()=>{
@@ -19,8 +17,7 @@ export const createTask=(formData)=>{
         method:"POST",
         headers: {
             'Accept': 'application/json',
-            'Content-Type': 'application/json' ,
-            'Authorization':`Bearer ${token}`
+            'Content-Type': 'application/json' 
         },
         body:JSON.stringify(formData)
     }
@@ -29,11 +26,7 @@ export const createTask=(formData)=>{
 }
 
 export const deleteTaskById=(id)=>{
-    return apicall({url:`${url}/${id}`,obj:{method:"DELETE",
-    headers:{
-        'Authorization':`Bearer ${token}`
-    }
-    }})
+    return apicall({url:`${url}/${id}`,obj:{method:"DELETE"}})
 }
 
 
@@ -42,8 +35,7 @@ export const updateTask=({id,data})=>{
         method:"PATCH",
         headers: {
             'Accept': 'application/json',
-            'Content-Type': 'application/json' ,
-            'Authorization':`Bearer ${token}`
+            'Content-Type': 'application/json' 
         },
         body:JSON.stringify(data)
     }
@@ -54,8 +46,5 @@ export const updateTask=({id,data})=>{
 export const deleteAll=()=>{
     return apicall({url:url,obj:{
         method:"DELETE",
-        headers:{
-            'Authorization':`Bearer ${token}`
-        }
     }})
 }
