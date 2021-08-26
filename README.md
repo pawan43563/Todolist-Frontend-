@@ -32,8 +32,15 @@
 │   └── components
 │     	└── task.js
 └── styles
-    ├── media-queries.css
-    └── styles.css
+│   ├── media-queries.css
+│   └── styles.css
+├── dist
+│   ├── index.html
+│   │ 	└── src
+│   ├── styles
+│   	└── style.css
+├── webpack.config.js
+├── package.json
 
 ```
 ------------
@@ -46,4 +53,4 @@
 ### Author
 ----
 * Work by Pawan Sharma
-# Todolist-Frontend-
+
